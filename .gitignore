@@ -1,6 +1,7 @@
 # Ignore composer generated files and directories
 vendor
 public/wp
+public/content/languages/*
 public/content/plugins/*
 public/content/themes/*
 public/content/mu-plugins/*
@@ -14,6 +15,7 @@ node_modules
 /memcached.php
 
 # Keep necessary files from the content folder
+!public/content/languages/index.php
 !public/content/plugins/index.php
 !public/content/themes/index.php
 !public/content/mu-plugins/index.php
