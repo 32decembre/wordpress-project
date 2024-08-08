@@ -7,7 +7,7 @@ This is a WordPress project handled mostly by Composer.
 ## Pre-requisites
 
 - PHP >= 8.1
-- 
+- Composer
 
 ## Composer
 
