@@ -41,6 +41,11 @@ if ( ! defined( 'DISALLOW_FILE_MODS' ) ) {
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
 $scheme = $_SERVER['REQUEST_SCHEME'] ?? 'http';
 $host   = $_SERVER['HTTP_HOST'] ?? 'localhost';
+
+if (defined('ROOT_URL')) {
+    $host = rtrim($host, '/') . '/' . trim(ROOT_URL, '/');
+}
+
 define( 'WP_CONTENT_URL', "$scheme://$host/content" );
 
 // ===========
