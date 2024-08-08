@@ -5,15 +5,16 @@ public/wp
 public/content/plugins/*
 public/content/themes/*
 public/content/mu-plugins/*
+node_modules
+*.iml
+.idea
 
 # Ignore configuration files, etc.
 /.env
 /local/
 /memcached.php
 
-# If you have a plugin, theme, or mu-plugin that you really do want to put into
-# version control, add an exception here. Exceptions will look like this:
-#   !public/content/plugins/plugin-folder
+# Keep necessary files from the content folder
 !public/content/plugins/index.php
 !public/content/themes/index.php
 !public/content/mu-plugins/index.php
@@ -24,3 +25,10 @@ public/local-config.php
 
 # Ignore uploads
 public/content/uploads
+
+# In case we need to download project files, they would go to wp-root
+wp-root*
+
+# If you have a plugin, theme, or mu-plugin that you really do want to put into
+# version control, add an exception here. Exceptions will look like this:
+#   !public/content/plugins/plugin-folder
